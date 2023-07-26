@@ -86,6 +86,7 @@ local Toggle = Tab:CreateToggle({
       if Value = true then
 loadstring(game:HttpGet("https://raw.githubusercontent.com/PricillFranken/rer/main/ammogiver.lua"))()
          else
+	wait(10)
 script.Parent:Destroy()
 	end)
    end,

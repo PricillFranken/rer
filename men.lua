@@ -80,3 +80,25 @@ game.CoreGui["2B"]:Destroy()
          end
    end,
 })
+local Section = Tab2:CreateSection("Main",true) -- The 2nd argument is to tell if its only a Title and doesnt contain element
+local Button = Tab2:CreateButton({
+   Name = "AutoFarm",
+   Info = "Enable autofarm.", -- Speaks for itself, Remove if none.
+   Interact = 'Click',
+   Callback = function()
+   print('Pressed')
+wait(0.5)
+   local AllowedObjectNames = {"Bronze","Silver","Gold","Crate"}
+game.Workspace.DescendantAdded:Connect(function(desc)
+    if table.find(AllowedObjectNames,desc.Name) then
+local prevpos = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+wait()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = desc.CFrame
+wait()
+desc.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+wait(.1)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = prevpos
+    end
+end)
+end,
+})

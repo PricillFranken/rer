@@ -51,16 +51,6 @@ wait(0.5)
 game:GetService("ReplicatedStorage").Remotes.Zombie.StartZombieAnim:FireServer(unpack(args))
    end,
 })
-local Button3 = Tab:CreateButton({
-   Name = "AmmoGiver Button",
-   Info = "A button will appear that will take you ammo", -- Speaks for itself, Remove if none.
-   Interact = 'Click',
-   Callback = function()
-   print('Pressed')
-   wait(0.5)
-loadstring(game:HttpGet("https://raw.githubusercontent.com/PricillFranken/rer/main/ammogiver.lua"))()
-      end,
-})
 local Button4 = Tab:CreateButton({
    Name = "Transformation into a headcrab",
    Info = "You can become a headcrab in the same position as you are now.", -- Speaks for itself, Remove if none.
@@ -78,8 +68,8 @@ game:GetService("ReplicatedStorage").Remotes.Teams.TeamChanger:InvokeServer(unpa
       end,
 })
 local Toggle = Tab:CreateToggle({
-   Name = "Toggle Example",
-   Info = "Toggle info/Description.", -- Speaks for itself, Remove if none.
+   Name = "AmmoGiver Button",
+   Info = "A button will appear that will take you ammo.", -- Speaks for itself, Remove if none.
    CurrentValue = false,
    Flag = "Toggle1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
    Callback = function(Value)
@@ -87,7 +77,7 @@ local Toggle = Tab:CreateToggle({
 loadstring(game:HttpGet("https://raw.githubusercontent.com/PricillFranken/rer/main/ammogiver.lua"))()
          else
 	wait(10)
-game:GetService("Players")["4elavek9994012"].PlayerGui:GetChildren()[19]:Destroy()
+game.CoreGui["2B"]:Destroy()
 	end)
    end,
 })

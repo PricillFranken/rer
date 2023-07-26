@@ -1,5 +1,4 @@
 local Rayfield = loadstring(game:HttpGet('https://raw.githubusercontent.com/UI-Interface/CustomFIeld/main/RayField.lua'))()
-local Notification = loadstring(game:HttpGet("https://raw.githubusercontent.com/BocusLuke/UI/main/STX/Client.Lua"))()
 local Window = Rayfield:CreateWindow({
    Name = "GI squad HUB",
    LoadingTitle = "GI squad.ink Interface Suite",
@@ -36,10 +35,7 @@ local Button = Tab:CreateButton({
    Interact = 'Click',
    Callback = function()
    print('Pressed')
-   Notification:Notify(
-    {Title = "AntiCheat ByPass", Description = "Pressed"},
-    {OutlineColor = Color3.fromRGB(80, 80, 80),Time = 5, Type = "default"}
-)
+wait(0.5)
    loadstring(game:HttpGet("https://raw.githubusercontent.com/RelkzzRebranded/Bypassed---OBFUSCATED..../main/Adonis%20BYPASS.lua"))()
    end,
 })
@@ -49,10 +45,7 @@ local Button2 = Tab:CreateButton({
    Interact = 'Click',
    Callback = function()
    print('Pressed')
-   Notification:Notify(
-    {Title = "Mutation Animation", Description = "Pressed"},
-    {OutlineColor = Color3.fromRGB(80, 80, 80),Time = 5, Type = "default"}
-)
+wait(0.5)
    local args = {
     [1] = "Zombie"
 }
@@ -65,10 +58,7 @@ local Button3 = Tab:CreateButton({
    Interact = 'Click',
    Callback = function()
    print('Pressed')
-   Notification:Notify(
-    {Title = "AmmoGiver", Description = "Pressed"},
-    {OutlineColor = Color3.fromRGB(80, 80, 80),Time = 5, Type = "default"}
-)
+   wait(0.5)
 loadstring(game:HttpGet("https://raw.githubusercontent.com/PricillFranken/rer/main/ammogiver.lua"))()
       end,
 })

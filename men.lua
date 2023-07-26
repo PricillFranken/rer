@@ -27,7 +27,7 @@ local Window = Rayfield:CreateWindow({
 local Tab = Window:CreateTab("HI") -- Title, Image
 local Tab2 = Window:CreateTab("PofF:R") -- Title, Image
 local Tab3 = Window:CreateTab("ER:LC")
-local Section = Tab:CreateSection("Main",false) -- The 2nd argument is to tell if its only a Title and doesnt contain element
+local Section = Tab:CreateSection("Main",true) -- The 2nd argument is to tell if its only a Title and doesnt contain element
 local Button = Tab:CreateButton({
    Name = "Anticheat ByPass",
    Info = "Off anticheat.", -- Speaks for itself, Remove if none.
@@ -66,4 +66,13 @@ local args = {
 }
 game:GetService("ReplicatedStorage").Remotes.Teams.TeamChanger:InvokeServer(unpack(args))
       end,
+})
+local Toggle = Tab:CreateToggle({
+   Name = "Toggle Example",
+   Info = "Toggle info/Description.", -- Speaks for itself, Remove if none.
+   CurrentValue = false,
+   Flag = "Toggle1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+   Callback = function(Value)
+      print(Value)
+   end,
 })

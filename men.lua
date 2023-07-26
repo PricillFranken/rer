@@ -11,11 +11,11 @@ local Window = Rayfield:CreateWindow({
    },
 local Notification = loadstring(game:HttpGet("https://raw.githubusercontent.com/BocusLuke/UI/main/STX/Client.Lua"))()
    Discord = {
-      Enabled = true,
+      Enabled = false,
       Invite = "MbN2DXPg34", -- The Discord invite code, do not include discord.gg/
       RememberJoins = true -- Set this to false to make them join the discord every time they load it up
    },
-   KeySystem = true, -- Set this to true to use our key system
+   KeySystem = false, -- Set this to true to use our key system
    KeySettings = {
       Title = "GI Squad.ink",
       Subtitle = "Key System",

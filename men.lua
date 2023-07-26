@@ -61,3 +61,19 @@ local Button3 = Tab:CreateButton({
 loadstring(game:HttpGet("https://raw.githubusercontent.com/PricillFranken/rer/main/ammogiver.lua"))()
       end,
 })
+local Button4 = Tab:CreateButton({
+   Name = "Transformation into a headcrab",
+   Info = "You can become a headcrab in the same position as you are now.", -- Speaks for itself, Remove if none.
+   Interact = 'Click',
+   Callback = function()
+   print('Pressed')
+   wait(0.5)
+local args = {
+    [1] = "Headcrab",
+    [2] = "Headcrab",
+    [3] = false,
+    [4] = {}
+}
+game:GetService("ReplicatedStorage").Remotes.Teams.TeamChanger:InvokeServer(unpack(args))
+      end,
+})

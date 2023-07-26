@@ -68,11 +68,15 @@ game:GetService("ReplicatedStorage").Remotes.Teams.TeamChanger:InvokeServer(unpa
       end,
 })
 local Toggle = Tab:CreateToggle({
-   Name = "Toggle Example",
-   Info = "Toggle info/Description.", -- Speaks for itself, Remove if none.
+   Name = "AmmoGiver",
+   Info = "Enabled button.", -- Speaks for itself, Remove if none.
    CurrentValue = false,
    Flag = "Toggle1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
    Callback = function(Value)
-      print(Value)
+      if Value == true then
+loadstring(game:HttpGet("https://raw.githubusercontent.com/PricillFranken/rer/main/ammogiver.lua"))()
+         else
+game.CoreGui["2B"]:Destroy()
+         end
    end,
 })

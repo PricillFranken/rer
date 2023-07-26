@@ -7,7 +7,7 @@ local UICorner = Instance.new("UICorner")
 --Properties:
 
 _2B.Name = "2B"
-_2B.Parent = game.Players.LocalPlayer.PlayerGui
+_2B.Parent = game:GetService("CoreGui")
 _2B.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 Bool_InfiniteStamina.Name = "Bool_InfiniteStamina"

@@ -1,14 +1,15 @@
 local Rayfield = loadstring(game:HttpGet('https://raw.githubusercontent.com/UI-Interface/CustomFIeld/main/RayField.lua'))()
 local Notification = loadstring(game:HttpGet("https://raw.githubusercontent.com/BocusLuke/UI/main/STX/Client.Lua"))()
 local Window = Rayfield:CreateWindow({
-   Name = "Gi squad HUB",
+   Name = "GI squad HUB",
    LoadingTitle = "GI squad.ink Interface Suite",
    LoadingSubtitle = "by pricill_franken and Jeka",
    ConfigurationSaving = {
       Enabled = true,
       FolderName = nil, -- Create a custom folder for your hub/game
-      FileName = "Arrayfield"
+      FileName = "GI squad"
    },
+local Notification = loadstring(game:HttpGet("https://raw.githubusercontent.com/BocusLuke/UI/main/STX/Client.Lua"))()
    Discord = {
       Enabled = true,
       Invite = "MbN2DXPg34", -- The Discord invite code, do not include discord.gg/
@@ -69,4 +70,5 @@ local Button3 = Tab:CreateButton({
     {OutlineColor = Color3.fromRGB(80, 80, 80),Time = 5, Type = "default"}
 )
 loadstring(game:HttpGet("https://raw.githubusercontent.com/PricillFranken/rer/main/ammogiver.lua"))()
+      end,
 })

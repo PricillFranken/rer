@@ -1,8 +1,8 @@
 local Rayfield = loadstring(game:HttpGet('https://raw.githubusercontent.com/UI-Interface/CustomFIeld/main/RayField.lua'))()
 local Window = Rayfield:CreateWindow({
-   Name = "Arrayfield Example Window",
-   LoadingTitle = "Arrayfield Interface Suite",
-   LoadingSubtitle = "by Arrays",
+   Name = "GI Squad.ink",
+   LoadingTitle = "Gi Squad presents",
+   LoadingSubtitle = "by pricill and Jeka",
    ConfigurationSaving = {
       Enabled = true,
       FolderName = nil, -- Create a custom folder for your hub/game

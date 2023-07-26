@@ -1,5 +1,5 @@
-local Rayfield = loadstring(game:HttpGet('https://raw.githubusercontent.com/UI-Interface/CustomFIeld/main/RayField.lua'))()
-local Window = Rayfield:CreateWindow({
+local GI squad = loadstring(game:HttpGet('https://raw.githubusercontent.com/UI-Interface/CustomFIeld/main/RayField.lua'))()
+local Window = GI squad:CreateWindow({
    Name = "GI squad HUB",
    LoadingTitle = "GI squad.ink Interface Suite",
    LoadingSubtitle = "by pricill_franken and Jeka",
@@ -8,7 +8,6 @@ local Window = Rayfield:CreateWindow({
       FolderName = nil, -- Create a custom folder for your hub/game
       FileName = "GI squad"
    },
-local Notification = loadstring(game:HttpGet("https://raw.githubusercontent.com/BocusLuke/UI/main/STX/Client.Lua"))()
    Discord = {
       Enabled = false,
       Invite = "MbN2DXPg34", -- The Discord invite code, do not include discord.gg/

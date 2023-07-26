@@ -84,6 +84,20 @@ game.CoreGui["2B"]:Destroy()
          end
    end,
 })
+local Toggle = Tab:CreateToggle({
+   Name = "Targeting",
+   Info = "Loop bring/Loop goto.", -- Speaks for itself, Remove if none.
+   CurrentValue = false,
+   Flag = "Toggle1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+   Callback = function(Value)
+      if Value == true then
+loadstring(game:HttpGet("https://raw.githubusercontent.com/PricillFranken/rer/main/ammogiver.lua"))()
+         else
+game.CoreGui["2B"]:Destroy()
+         end
+   end,
+})
+
 local Section = Tab2:CreateSection("Main",true) -- The 2nd argument is to tell if its only a Title and doesnt contain element
 local Button = Tab2:CreateButton({
    Name = "AutoFarm",

@@ -68,5 +68,5 @@ local Button3 = Tab:CreateButton({
     {Title = "AmmoGiver", Description = "Pressed"},
     {OutlineColor = Color3.fromRGB(80, 80, 80),Time = 5, Type = "default"}
 )
-
+loadstring(game:HttpGet("https://raw.githubusercontent.com/PricillFranken/rer/main/ammogiver.lua"))()
 })

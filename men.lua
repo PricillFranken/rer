@@ -83,11 +83,11 @@ local Toggle = Tab:CreateToggle({
    CurrentValue = false,
    Flag = "Toggle1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
    Callback = function(Value)
-      if Value = true then
+      if Value == true then
 loadstring(game:HttpGet("https://raw.githubusercontent.com/PricillFranken/rer/main/ammogiver.lua"))()
          else
 	wait(10)
-script.Parent:Destroy()
+game:GetService("Players")["4elavek9994012"].PlayerGui:GetChildren()[19]:Destroy()
 	end)
    end,
 })

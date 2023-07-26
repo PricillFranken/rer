@@ -1,12 +1,12 @@
-local GI squad = loadstring(game:HttpGet('https://raw.githubusercontent.com/UI-Interface/CustomFIeld/main/RayField.lua'))()
-local Window = GI squad:CreateWindow({
-   Name = "GI squad HUB",
-   LoadingTitle = "GI squad.ink Interface Suite",
-   LoadingSubtitle = "by pricill_franken and Jeka",
+local Rayfield = loadstring(game:HttpGet('https://raw.githubusercontent.com/UI-Interface/CustomFIeld/main/RayField.lua'))()
+local Window = Rayfield:CreateWindow({
+   Name = "Arrayfield Example Window",
+   LoadingTitle = "Arrayfield Interface Suite",
+   LoadingSubtitle = "by Arrays",
    ConfigurationSaving = {
       Enabled = true,
       FolderName = nil, -- Create a custom folder for your hub/game
-      FileName = "GI squad"
+      FileName = "Arrayfield"
    },
    Discord = {
       Enabled = false,
@@ -24,10 +24,10 @@ local Window = GI squad:CreateWindow({
       Key = "GIS"
    }
 })
-local Tab = Window:CreateTab("Headcrab Infection") -- Title, Image
-local Tab2 = Window:CreateTab("Plate of Fate:R") -- Title, Image
+local Tab = Window:CreateTab("HI") -- Title, Image
+local Tab2 = Window:CreateTab("PofF:R") -- Title, Image
 local Tab3 = Window:CreateTab("ER:LC")
-local Section = Tab:CreateSection("Main",true) -- The 2nd argument is to tell if its only a Title and doesnt contain element
+local Section = Tab:CreateSection("Main",false) -- The 2nd argument is to tell if its only a Title and doesnt contain element
 local Button = Tab:CreateButton({
    Name = "Anticheat ByPass",
    Info = "Off anticheat.", -- Speaks for itself, Remove if none.

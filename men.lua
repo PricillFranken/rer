@@ -58,6 +58,8 @@ local Button4 = Tab:CreateButton({
    Callback = function()
    print('Pressed')
    wait(0.5)
+local prevpos = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+wait()
 local args = {
     [1] = "Headcrab",
     [2] = "Headcrab",
@@ -65,7 +67,9 @@ local args = {
     [4] = {}
 }
 game:GetService("ReplicatedStorage").Remotes.Teams.TeamChanger:InvokeServer(unpack(args))
-      end,
+      wait(0.1)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = prevpos
+end,
 })
 local Toggle = Tab:CreateToggle({
    Name = "AmmoGiver",

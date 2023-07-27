@@ -1,3 +1,8 @@
+game:GetService'StarterGui':SetCore('SendNotification', {
+  Title = 'Notification',
+  Text = 'GI squad.ink is loading!',
+  Duration = 5
+})
 local Rayfield = loadstring(game:HttpGet('https://raw.githubusercontent.com/UI-Interface/CustomFIeld/main/RayField.lua'))()
 local Window = Rayfield:CreateWindow({
    Name = "GI Squad.ink",

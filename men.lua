@@ -59,7 +59,7 @@ local SingleSelection = Tab:CreateDropdown({
    Flag = "Dropdown2", 
    Callback = function(Option)
     print(Option)
-if Option == "Headcrab" then
+if Option == Headcrab then
    wait(0.5)
 local prevpos = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
 wait()

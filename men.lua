@@ -150,7 +150,7 @@ local args = {
     [4] = {}
 }
 game:GetService("ReplicatedStorage").Remotes.Teams.TeamChanger:InvokeServer(unpack(args))
-      wait(0.1)
+      wait(0.4)
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = prevpos
 end,
 })
@@ -170,7 +170,7 @@ local args = {
     [4] = {}
 }
 game:GetService("ReplicatedStorage").Remotes.Teams.TeamChanger:InvokeServer(unpack(args))
-      wait(0.1)
+      wait(0.4)
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = prevpos
 end,
 })

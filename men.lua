@@ -28,7 +28,7 @@ local Tab = Window:CreateTab("HI") -- Title, Image
 local Tab2 = Window:CreateTab("PofF:R") -- Title, Image
 local Tab3 = Window:CreateTab("ER:LC")
 local Section = Tab:CreateSection("Main",true) -- The 2nd argument is to tell if its only a Title and doesnt contain element
-local Button = Tab:CreateButton({
+local ACButton = Tab:CreateButton({
    Name = "Anticheat ByPass",
    Info = "Off anticheat.", -- Speaks for itself, Remove if none.
    Interact = 'Click',
@@ -38,7 +38,7 @@ wait(0.5)
    loadstring(game:HttpGet("https://raw.githubusercontent.com/RelkzzRebranded/Bypassed---OBFUSCATED..../main/Adonis%20BYPASS.lua"))()
    end,
 })
-local Button2 = Tab:CreateButton({
+local MButton = Tab:CreateButton({
    Name = "Mutation [ONLY Headcrab]",
    Info = "Enable animation. Give inf health for a while, but you are frozen", -- Speaks for itself, Remove if none.
    Interact = 'Click',
@@ -52,7 +52,7 @@ game:GetService("ReplicatedStorage").Remotes.Zombie.StartZombieAnim:FireServer(u
    end,
 })
 
-local Toggle = Tab:CreateToggle({
+local Toggle1 = Tab:CreateToggle({
    Name = "AmmoGiver",
    Info = "Enabled button.", -- Speaks for itself, Remove if none.
    CurrentValue = false,
@@ -65,7 +65,7 @@ game.CoreGui["2B"]:Destroy()
          end
    end,
 })
-local Toggle = Tab:CreateToggle({
+local Toggle2 = Tab:CreateToggle({
    Name = "Targeting GUI",
    Info = "Loop bring/Loop goto.", -- Speaks for itself, Remove if none.
    CurrentValue = false,
@@ -78,8 +78,8 @@ game.CoreGui["_G>FGSC"]:Destroy()
          end
    end,
 })
-local Section2 = Tab:CreateSection("Transformation",false)
-local Button = Tab:CreateButton({
+local Section2 = Tab:CreateSection("Transformation",true)
+local Button1 = Tab:CreateButton({
    Name = "Headcrab",
    Info = "You can become a headcrab in the same position as you are now.", -- Speaks for itself, Remove if none.
    Interact = 'Click',
@@ -100,7 +100,7 @@ game:GetService("ReplicatedStorage").Remotes.Teams.TeamChanger:InvokeServer(unpa
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = prevpos
 end,
 })
-local Button = Tab:CreateButton({
+local Button2 = Tab:CreateButton({
    Name = "Baby Headcrab",
    Info = "You can become a baby headcrab in the same position as you are now.", -- Speaks for itself, Remove if none.
    Interact = 'Click',
@@ -118,7 +118,7 @@ game:GetService("ReplicatedStorage").Remotes.Teams.TeamChanger:InvokeServer(unpa
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = prevpos
 end,
 })
-local Button = Tab:CreateButton({
+local Button3 = Tab:CreateButton({
    Name = "Survivor",
    Info = "You can become a survivor in the same position as you are now.", -- Speaks for itself, Remove if none.
    Interact = 'Click',
@@ -138,7 +138,7 @@ game:GetService("ReplicatedStorage").Remotes.Teams.TeamChanger:InvokeServer(unpa
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = prevpos
 end,
 })
-local Button = Tab:CreateButton({
+local Button4 = Tab:CreateButton({
    Name = "Vortignaut (not return)",
    Info = "You can become a vortignaut in the same position as you are now.", -- Speaks for itself, Remove if none.
    Interact = 'Click',
@@ -158,7 +158,7 @@ game:GetService("ReplicatedStorage").Remotes.Teams.TeamChanger:InvokeServer(unpa
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = prevpos
 end,
 })
-local button = Tab:CreateButton({
+local Button5 = Tab:CreateButton({
    Name = "Bullsquid (not return)",
    Info = "You can become a Bullsquid in the same position as you are now.", -- Speaks for itself, Remove if none.
    Interact = 'Click',
@@ -179,7 +179,7 @@ game:GetService("ReplicatedStorage").Remotes.Teams.TeamChanger:InvokeServer(unpa
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = prevpos
 end,
 })
-local Button = Tab:CreateButton({
+local Button6 = Tab:CreateButton({
    Name = "Pit Drone",
    Info = "You can become a Pit Drone in the same position as you are now.", -- Speaks for itself, Remove if none.
    Interact = 'Click',

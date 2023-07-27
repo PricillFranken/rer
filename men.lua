@@ -35,6 +35,12 @@ local ACButton = Tab:CreateButton({
    Callback = function()
 wait(0.5)
    loadstring(game:HttpGet("https://raw.githubusercontent.com/RelkzzRebranded/Bypassed---OBFUSCATED..../main/Adonis%20BYPASS.lua"))()
+wait(0.5)
+game:GetService'StarterGui':SetCore('SendNotification', {
+  Title = 'Notification',
+  Text = 'ByPass launched!',
+  Duration = 5
+})
    end,
 })
 local MButton = Tab:CreateButton({
@@ -42,13 +48,12 @@ local MButton = Tab:CreateButton({
    Info = "Enable animation. Give inf health for a while, but you are frozen", -- Speaks for itself, Remove if none.
    Interact = 'Click',
    Callback = function()
-   print('Pressed')
 wait(0.5)
    local args = {
     [1] = "Zombie"
 }
-wait(0.5)
 game:GetService("ReplicatedStorage").Remotes.Zombie.StartZombieAnim:FireServer(unpack(args))
+wait(0.5)
 game:GetService'StarterGui':SetCore('SendNotification', {
   Title = 'Notification',
   Text = 'Mutation launched!',

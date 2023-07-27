@@ -209,7 +209,7 @@ local args = {
 }
 game:GetService("ReplicatedStorage").Remotes.Teams.TeamChanger:InvokeServer(unpack(args))
       wait(0.4)
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = prevpos
+game.Players.LocalPlayer.Character:MoveTo(Vector3.new(poshere)) = prevpos
 wait(0.5)
 game:GetService'StarterGui':SetCore('SendNotification', {
   Title = 'Notification',
@@ -235,7 +235,7 @@ local args = {
 }
 game:GetService("ReplicatedStorage").Remotes.Teams.TeamChanger:InvokeServer(unpack(args))
       wait(0.4)
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = prevpos
+game.Players.LocalPlayer.Character:MoveTo(Vector3.new(poshere)) = prevpos
 wait(0.5)
 game:GetService'StarterGui':SetCore('SendNotification', {
   Title = 'Notification',

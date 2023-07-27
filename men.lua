@@ -51,50 +51,7 @@ wait(0.5)
 game:GetService("ReplicatedStorage").Remotes.Zombie.StartZombieAnim:FireServer(unpack(args))
    end,
 })
-local SingleSelection = Tab:CreateDropdown({
-   Name = "Transformation",
-   Options = {"Headcrab","Survivor","RaceX"},
-   CurrentOption = "Option 1",
-   MultiSelection = false,
-   Flag = "Dropdown2", 
-   Callback = function(Option)
-    print(Option)
-if Option == Headcrab then
-   wait(0.5)
-local prevpos = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
-wait()
-local args = {
-    [1] = "Headcrab",
-    [2] = "Headcrab",
-    [3] = false,
-    [4] = {}
-}
-game:GetService("ReplicatedStorage").Remotes.Teams.TeamChanger:InvokeServer(unpack(args))
-      wait(0.1)
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = prevpos
-         end
-   end,
-})
-local Button4 = Tab:CreateButton({
-   Name = "Transformation into a headcrab",
-   Info = "You can become a headcrab in the same position as you are now.", -- Speaks for itself, Remove if none.
-   Interact = 'Click',
-   Callback = function()
-   print('Pressed')
-   wait(0.5)
-local prevpos = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
-wait()
-local args = {
-    [1] = "Headcrab",
-    [2] = "Headcrab",
-    [3] = false,
-    [4] = {}
-}
-game:GetService("ReplicatedStorage").Remotes.Teams.TeamChanger:InvokeServer(unpack(args))
-      wait(0.1)
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = prevpos
-end,
-})
+
 local Toggle = Tab:CreateToggle({
    Name = "AmmoGiver",
    Info = "Enabled button.", -- Speaks for itself, Remove if none.
@@ -121,7 +78,121 @@ game.CoreGui["_G>FGSC"]:Destroy()
          end
    end,
 })
-
+local Section2 = Tab:CreateSection("Transformation",true)
+local Button4 = Tab:CreateButton({
+   Name = "Headcrab",
+   Info = "You can become a headcrab in the same position as you are now.", -- Speaks for itself, Remove if none.
+   Interact = 'Click',
+   Callback = function()
+   print('Pressed')
+   wait(0.5)
+local prevpos = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+wait()
+local args = {
+    [1] = "Headcrab",
+    [2] = "Headcrab",
+    [3] = false,
+    [4] = {}
+}
+game:GetService("ReplicatedStorage").Remotes.Teams.TeamChanger:InvokeServer(unpack(args))
+      wait(0.1)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = prevpos
+end,
+})
+local Button4 = Tab:CreateButton({
+   Name = "Baby Headcrab",
+   Info = "You can become a baby headcrab in the same position as you are now.", -- Speaks for itself, Remove if none.
+   Interact = 'Click',
+   Callback = function()
+   print('Pressed')
+   wait(0.5)
+local prevpos = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+wait()
+local args = {
+    [1] = "Baby_Headcrab"
+}
+game:GetService("ReplicatedStorage").Remotes.Teams.TeamChanger:InvokeServer(unpack(args))
+      wait(0.1)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = prevpos
+end,
+})
+local Button4 = Tab:CreateButton({
+   Name = "Survivor",
+   Info = "You can become a survivor in the same position as you are now.", -- Speaks for itself, Remove if none.
+   Interact = 'Click',
+   Callback = function()
+   print('Pressed')
+   wait(0.5)
+local prevpos = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+wait()
+local args = {
+    [1] = "Survivor",
+    [3] = false,
+    [4] = {}
+}
+game:GetService("ReplicatedStorage").Remotes.Teams.TeamChanger:InvokeServer(unpack(args))
+      wait(0.1)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = prevpos
+end,
+})
+local Button4 = Tab:CreateButton({
+   Name = "Vortignaut",
+   Info = "You can become a vortignaut in the same position as you are now.", -- Speaks for itself, Remove if none.
+   Interact = 'Click',
+   Callback = function()
+   print('Pressed')
+   wait(0.5)
+local prevpos = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+wait()
+local args = {
+    [1] = "Vortignaut",
+    [3] = false,
+    [4] = {}
+}
+game:GetService("ReplicatedStorage").Remotes.Teams.TeamChanger:InvokeServer(unpack(args))
+      wait(0.1)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = prevpos
+end,
+})
+local Button4 = Tab:CreateButton({
+   Name = "Bullsquid",
+   Info = "You can become a Bullsquid in the same position as you are now.", -- Speaks for itself, Remove if none.
+   Interact = 'Click',
+   Callback = function()
+   print('Pressed')
+   wait(0.5)
+local prevpos = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+wait()
+local args = {
+    [1] = "Bullsquid",
+    [2] = "Bullsquid",
+    [3] = false,
+    [4] = {}
+}
+game:GetService("ReplicatedStorage").Remotes.Teams.TeamChanger:InvokeServer(unpack(args))
+      wait(0.1)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = prevpos
+end,
+})
+local Button4 = Tab:CreateButton({
+   Name = "Pit Drone",
+   Info = "You can become a Pit Drone in the same position as you are now.", -- Speaks for itself, Remove if none.
+   Interact = 'Click',
+   Callback = function()
+   print('Pressed')
+   wait(0.5)
+local prevpos = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+wait()
+local args = {
+    [1] = "Pit Drone",
+    [3] = false,
+    [4] = {}
+}
+game:GetService("ReplicatedStorage").Remotes.Teams.TeamChanger:InvokeServer(unpack(args))
+      wait(0.1)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = prevpos
+end,
+})
 local Section = Tab2:CreateSection("Main",true) -- The 2nd argument is to tell if its only a Title and doesnt contain element
 local Button = Tab2:CreateButton({
    Name = "AutoFarm",

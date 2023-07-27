@@ -117,13 +117,14 @@ game:GetService'StarterGui':SetCore('SendNotification', {
          end
    end,
 })
-local TSect = Tab:CreateSection("Transformation [do not use at DEATH!!!]",false)
+local TSect = Tab:CreateSection("Transformation [can't use if dead or no character]",false)
 local Button1 = Tab:CreateButton({
    Name = "Headcrab",
    Info = "You can become a headcrab in the same position as you are now.", -- Speaks for itself, Remove if none.
    Interact = 'Click',
    SectionParent = TSect,
    Callback = function()
+                  if game.Players.LocalPlayer.Character~=nil and game.Players.LocalPlayer.Character.Humanoid and game.Players.LocalPlayer.Character.Humanoid.Health>0 then
    wait(0.5)
 local prevpos = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
 wait()
@@ -141,7 +142,7 @@ game:GetService'StarterGui':SetCore('SendNotification', {
   Title = 'Notification',
   Text = 'Transformation is complete!',
   Duration = 5
-})
+}) end
 end,
 })
 local Button2 = Tab:CreateButton({
@@ -150,6 +151,7 @@ local Button2 = Tab:CreateButton({
    Interact = 'Click',
    SectionParent = TSect,
    Callback = function()
+         if game.Players.LocalPlayer.Character~=nil and game.Players.LocalPlayer.Character.Humanoid and game.Players.LocalPlayer.Character.Humanoid.Health>0 then
    wait(0.5)
 local prevpos = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
 wait()
@@ -160,11 +162,12 @@ game:GetService("ReplicatedStorage").Remotes.Teams.TeamChanger:InvokeServer(unpa
       wait(0.1)
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = prevpos
 wait(0.5)
+            
 game:GetService'StarterGui':SetCore('SendNotification', {
   Title = 'Notification',
   Text = 'Transformation is complete!',
   Duration = 5
-})
+}) end
 end,
 })
 local Button3 = Tab:CreateButton({
@@ -173,6 +176,7 @@ local Button3 = Tab:CreateButton({
    Interact = 'Click',
    SectionParent = TSect,
    Callback = function()
+                  if game.Players.LocalPlayer.Character~=nil and game.Players.LocalPlayer.Character.Humanoid and game.Players.LocalPlayer.Character.Humanoid.Health>0 then
    wait(0.5)
 local prevpos = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
 wait()
@@ -189,7 +193,7 @@ game:GetService'StarterGui':SetCore('SendNotification', {
   Title = 'Notification',
   Text = 'Transformation is complete!',
   Duration = 5
-})
+}) end
 end,
 })
 local Button4 = Tab:CreateButton({
@@ -198,6 +202,7 @@ local Button4 = Tab:CreateButton({
    Interact = 'Click',
    SectionParent = TSect,
    Callback = function()
+                  if game.Players.LocalPlayer.Character~=nil and game.Players.LocalPlayer.Character.Humanoid and game.Players.LocalPlayer.Character.Humanoid.Health>0 then
    wait(0.5)
 local prevpos = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
 local prevvec = game.Players.LocalPlayer.Character.HumanoidRootPart.Position
@@ -215,7 +220,7 @@ game:GetService'StarterGui':SetCore('SendNotification', {
   Title = 'Notification',
   Text = 'Transformation is complete!',
   Duration = 5
-})
+}) end
 end,
 })
 local Button5 = Tab:CreateButton({
@@ -223,7 +228,8 @@ local Button5 = Tab:CreateButton({
    Info = "You can become a Bullsquid in the same position as you are now.", -- Speaks for itself, Remove if none.
    Interact = 'Click',
    SectionParent = TSect,
-   Callback = function()
+   Callback = function() 
+                  if game.Players.LocalPlayer.Character~=nil and game.Players.LocalPlayer.Character.Humanoid and game.Players.LocalPlayer.Character.Humanoid.Health>0 then
    wait(0.5)
 local prevpos = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
 local prevvec = game.Players.LocalPlayer.Character.HumanoidRootPart.Position
@@ -242,7 +248,7 @@ game:GetService'StarterGui':SetCore('SendNotification', {
   Title = 'Notification',
   Text = 'Transformation is complete!',
   Duration = 5
-})
+}) end
 end,
 })
 local Button6 = Tab:CreateButton({
@@ -251,6 +257,7 @@ local Button6 = Tab:CreateButton({
    Interact = 'Click',
    SectionParent = TSect,
    Callback = function()
+                  if game.Players.LocalPlayer.Character~=nil and game.Players.LocalPlayer.Character.Humanoid and game.Players.LocalPlayer.Character.Humanoid.Health>0 then
    wait(0.5)
 local prevpos = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
 wait()
@@ -267,7 +274,7 @@ game:GetService'StarterGui':SetCore('SendNotification', {
   Title = 'Notification',
   Text = 'Transformation is complete!',
   Duration = 5
-})
+}) end
 end,
 })
 local Section = Tab2:CreateSection("Main",true) -- The 2nd argument is to tell if its only a Title and doesnt contain element

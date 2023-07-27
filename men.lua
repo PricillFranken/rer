@@ -208,7 +208,7 @@ local args = {
 }
 game:GetService("ReplicatedStorage").Remotes.Teams.TeamChanger:InvokeServer(unpack(args))
       wait(0.4)
-game.Players.LocalPlayer.Character:MoveTo(Vector3.new(prevpos))
+game.Players.LocalPlayer.Character:MoveTo(Vector3.new(prevvec))
 wait(0.5)
 game:GetService'StarterGui':SetCore('SendNotification', {
   Title = 'Notification',

@@ -78,7 +78,7 @@ game.CoreGui["_G>FGSC"]:Destroy()
          end
    end,
 })
-local Section2 = Tab:CreateSection("Transformation",true)
+local Section2 = Tab:CreateSection("Transformation",false)
 local Button4 = Tab:CreateButton({
    Name = "Headcrab",
    Info = "You can become a headcrab in the same position as you are now.", -- Speaks for itself, Remove if none.
@@ -109,7 +109,7 @@ local Button4 = Tab:CreateButton({
 local prevpos = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
 wait()
 local args = {
-    [1] = "Baby_Headcrab"
+    [1] = "Baby_Headcrab (need gonarch)"
 }
 game:GetService("ReplicatedStorage").Remotes.Teams.TeamChanger:InvokeServer(unpack(args))
       wait(0.1)
@@ -145,7 +145,7 @@ local Button4 = Tab:CreateButton({
 local prevpos = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
 wait()
 local args = {
-    [1] = "Vortignaut",
+    [1] = "Vortignaut (not return)",
     [3] = false,
     [4] = {}
 }
@@ -155,7 +155,7 @@ game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = prevpos
 end,
 })
 local Button4 = Tab:CreateButton({
-   Name = "Bullsquid",
+   Name = "Bullsquid (not return)",
    Info = "You can become a Bullsquid in the same position as you are now.", -- Speaks for itself, Remove if none.
    Interact = 'Click',
    Callback = function()

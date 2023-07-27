@@ -200,6 +200,7 @@ local Button4 = Tab:CreateButton({
    Callback = function()
    wait(0.5)
 local prevpos = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+local prevvec = game.Players.LocalPlayer.Character.HumanoidRootPart.Position
 wait()
 local args = {
     [1] = "Vortignaut",

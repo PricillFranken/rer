@@ -1,4 +1,3 @@
-game:GetService("StarterGui"):SetCore("SendNotification", {Title = "yeet", Text = "t = Enabled : p = disabled."})
 local player = game.Players.LocalPlayer
 local mouse = player:GetMouse()
 local 

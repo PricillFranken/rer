@@ -250,7 +250,6 @@ local Button6 = Tab:CreateButton({
    Interact = 'Click',
    SectionParent = TSect,
    Callback = function()
-   print('Pressed')
    wait(0.5)
 local prevpos = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
 wait()
@@ -276,7 +275,6 @@ local Button = Tab2:CreateButton({
    Info = "Enable autofarm.", -- Speaks for itself, Remove if none.
    Interact = 'Click',
    Callback = function()
-   print('Pressed')
 wait(0.5)
    local AllowedObjectNames = {"Bronze","Silver","Gold","Crate"}
 game.Workspace.DescendantAdded:Connect(function(desc)
@@ -344,30 +342,30 @@ game:GetService'StarterGui':SetCore('SendNotification', {
 local Section = Tab4:CreateSection("Script list:",true)
 local Button = Tab4:CreateButton({
   Name = "Inf Yield",
-  Info = "",
+  Info = "-",
   Interact = 'Click',
   Callback = function()
   wait(0.5)
   loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
   wait(0.5)
   game:GetService'StarterGui':SetCore('SendNotification', {
-     Title = 'Notification'
-     Text = 'Infinity Yield launched!'
+     Title = 'Notification',
+     Text = 'Infinity Yield launched!',
      Duration = 5
             })
       end,
    })
 local Button = Tab4:CreateButton({
-  Name = "HitBox"
-  Info = "",
+  Name = "HitBox",
+  Info = "-",
   Interact = 'Click',
   Callback = function()
   wait(0.5)
 loadstring(game:HttpGet("https://raw.githubusercontent.com/PricillFranken/rer/main/luafolder/HB.lua"))()
   wait(0.5)
 game:GetService'StarterGui':SetCore('SendNotification', {
-   Title = 'Notification'
-   Text = 't = Enabled : p = disabled.'
+   Title = 'Notification',
+   Text = 't = Enabled : p = disabled.',
    Duration = 5
             })
       end,

@@ -248,6 +248,6 @@ local Button = Tab3:CreateButton({
   Interact = 'Click',
   Callback = function()
   wait(0.5)
-  loadstring(game:HttpGet(https://raw.githubusercontent.com/PricillFranken/rer/main/infstam.lua))()
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/PricillFranken/rer/main/infstam.lua"))()
       end,
    })

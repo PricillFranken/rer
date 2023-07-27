@@ -173,7 +173,6 @@ local Button3 = Tab:CreateButton({
    Interact = 'Click',
    SectionParent = TSect,
    Callback = function()
-   print('Pressed')
    wait(0.5)
 local prevpos = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
 wait()

@@ -71,9 +71,21 @@ local Toggle1 = Tab:CreateToggle({
       if Value == true then
 wait(0.5)
 loadstring(game:HttpGet("https://raw.githubusercontent.com/PricillFranken/rer/main/ammogiver.lua"))()
+wait(0.5)
+game:GetService'StarterGui':SetCore('SendNotification', {
+  Title = 'Notification',
+  Text = 'AmmoGiver launched!',
+  Duration = 5
+})
          else
 wait(0.5)
 game.CoreGui["2B"]:Destroy()
+wait(0.5)
+game:GetService'StarterGui':SetCore('SendNotification', {
+  Title = 'Notification',
+  Text = 'AmmoGiver removed!',
+  Duration = 5
+})
          end
    end,
 })
@@ -83,24 +95,34 @@ local Toggle2 = Tab:CreateToggle({
    CurrentValue = false,
    Flag = "Toggle1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
    Callback = function(Value)
-
       if Value == true then
 wait(0.5)
 loadstring(game:HttpGet("https://raw.githubusercontent.com/PricillFranken/rer/main/targeting.lua"))()
+wait(0.5)
+game:GetService'StarterGui':SetCore('SendNotification', {
+  Title = 'Notification',
+  Text = 'Targeting GUI launched!',
+  Duration = 5
+})
          else
 wait(0.5)
 game.CoreGui["_G>FGSC"]:Destroy()
+wait(0.5)
+game:GetService'StarterGui':SetCore('SendNotification', {
+  Title = 'Notification',
+  Text = 'Targeting removed!',
+  Duration = 5
+})
          end
    end,
 })
-local TSect = Tab:CreateSection("Transformation",false)
+local TSect = Tab:CreateSection("Transformation [do not use at DEATH!!!]",false)
 local Button1 = Tab:CreateButton({
    Name = "Headcrab",
    Info = "You can become a headcrab in the same position as you are now.", -- Speaks for itself, Remove if none.
    Interact = 'Click',
    SectionParent = TSect,
    Callback = function()
-   print('Pressed')
    wait(0.5)
 local prevpos = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
 wait()
@@ -113,6 +135,12 @@ local args = {
 game:GetService("ReplicatedStorage").Remotes.Teams.TeamChanger:InvokeServer(unpack(args))
       wait(0.1)
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = prevpos
+wait(0.5)
+game:GetService'StarterGui':SetCore('SendNotification', {
+  Title = 'Notification',
+  Text = 'Transformation is complete!',
+  Duration = 5
+})
 end,
 })
 local Button2 = Tab:CreateButton({
@@ -121,7 +149,6 @@ local Button2 = Tab:CreateButton({
    Interact = 'Click',
    SectionParent = TSect,
    Callback = function()
-   print('Pressed')
    wait(0.5)
 local prevpos = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
 wait()
@@ -131,6 +158,12 @@ local args = {
 game:GetService("ReplicatedStorage").Remotes.Teams.TeamChanger:InvokeServer(unpack(args))
       wait(0.1)
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = prevpos
+wait(0.5)
+game:GetService'StarterGui':SetCore('SendNotification', {
+  Title = 'Notification',
+  Text = 'Transformation is complete!',
+  Duration = 5
+})
 end,
 })
 local Button3 = Tab:CreateButton({
@@ -151,6 +184,12 @@ local args = {
 game:GetService("ReplicatedStorage").Remotes.Teams.TeamChanger:InvokeServer(unpack(args))
       wait(0.1)
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = prevpos
+wait(0.5)
+game:GetService'StarterGui':SetCore('SendNotification', {
+  Title = 'Notification',
+  Text = 'Transformation is complete!',
+  Duration = 5
+})
 end,
 })
 local Button4 = Tab:CreateButton({
@@ -159,7 +198,6 @@ local Button4 = Tab:CreateButton({
    Interact = 'Click',
    SectionParent = TSect,
    Callback = function()
-   print('Pressed')
    wait(0.5)
 local prevpos = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
 wait()
@@ -171,6 +209,12 @@ local args = {
 game:GetService("ReplicatedStorage").Remotes.Teams.TeamChanger:InvokeServer(unpack(args))
       wait(0.4)
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = prevpos
+wait(0.5)
+game:GetService'StarterGui':SetCore('SendNotification', {
+  Title = 'Notification',
+  Text = 'Transformation is complete!',
+  Duration = 5
+})
 end,
 })
 local Button5 = Tab:CreateButton({
@@ -179,7 +223,6 @@ local Button5 = Tab:CreateButton({
    Interact = 'Click',
    SectionParent = TSect,
    Callback = function()
-   print('Pressed')
    wait(0.5)
 local prevpos = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
 wait()
@@ -192,6 +235,12 @@ local args = {
 game:GetService("ReplicatedStorage").Remotes.Teams.TeamChanger:InvokeServer(unpack(args))
       wait(0.4)
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = prevpos
+wait(0.5)
+game:GetService'StarterGui':SetCore('SendNotification', {
+  Title = 'Notification',
+  Text = 'Transformation is complete!',
+  Duration = 5
+})
 end,
 })
 local Button6 = Tab:CreateButton({
@@ -212,6 +261,12 @@ local args = {
 game:GetService("ReplicatedStorage").Remotes.Teams.TeamChanger:InvokeServer(unpack(args))
       wait(0.1)
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = prevpos
+wait(0.5)
+game:GetService'StarterGui':SetCore('SendNotification', {
+  Title = 'Notification',
+  Text = 'Transformation is complete!',
+  Duration = 5
+})
 end,
 })
 local Section = Tab2:CreateSection("Main",true) -- The 2nd argument is to tell if its only a Title and doesnt contain element
@@ -234,6 +289,12 @@ wait(.1)
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = prevpos
     end
 end)
+wait(0.5)
+game:GetService'StarterGui':SetCore('SendNotification', {
+  Title = 'Notification',
+  Text = 'AutoFarm launched!',
+  Duration = 5
+})
 end,
 })
 local Section = Tab3:CreateSection("Main",true)
@@ -246,9 +307,21 @@ local Toggle = Tab3:CreateToggle({
 if Value == true then
       wait(0.5)
 loadstring(game:HttpGet("https://raw.githubusercontent.com/PricillFranken/rer/main/callgui.lua"))()
+wait(0.5)
+game:GetService'StarterGui':SetCore('SendNotification', {
+  Title = 'Notification',
+  Text = 'CallHack GUI launched!',
+  Duration = 5
+})
          else
 wait(0.5)
 game.CoreGui["GlobalCall"]:Destroy()
+wait(0.5)
+game:GetService'StarterGui':SetCore('SendNotification', {
+  Title = 'Notification',
+  Text = 'CallHack GUI is disabled!',
+  Duration = 5
+})
          end
    end,
 })
@@ -259,5 +332,11 @@ local Button = Tab3:CreateButton({
   Callback = function()
   wait(0.5)
   loadstring(game:HttpGet("https://raw.githubusercontent.com/PricillFranken/rer/main/infstam.lua"))()
+wait(0.5)
+game:GetService'StarterGui':SetCore('SendNotification', {
+  Title = 'Notification',
+  Text = 'Inf Stamin launched!',
+  Duration = 5
+})
       end,
    })

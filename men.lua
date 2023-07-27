@@ -59,8 +59,10 @@ local Toggle1 = Tab:CreateToggle({
    Flag = "Toggle1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
    Callback = function(Value)
       if Value == true then
+wait(0.5)
 loadstring(game:HttpGet("https://raw.githubusercontent.com/PricillFranken/rer/main/ammogiver.lua"))()
          else
+wait(0.5)
 game.CoreGui["2B"]:Destroy()
          end
    end,
@@ -71,9 +73,12 @@ local Toggle2 = Tab:CreateToggle({
    CurrentValue = false,
    Flag = "Toggle1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
    Callback = function(Value)
+
       if Value == true then
+wait(0.5)
 loadstring(game:HttpGet("https://raw.githubusercontent.com/PricillFranken/rer/main/targeting.lua"))()
          else
+wait(0.5)
 game.CoreGui["_G>FGSC"]:Destroy()
          end
    end,
@@ -220,4 +225,20 @@ game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = prevpos
     end
 end)
 end,
+})
+local Section = Tab3:CreateSection("Main",true)
+local Toggle = Tab3:CreateToggle({
+   Name = "CallHack GUI",
+   Info = "Enable call hack gui.", -- Speaks for itself, Remove if none.
+   CurrentValue = false,
+   Flag = "Toggle1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+   Callback = function(Value)
+if Value == true then
+      wait(0.5)
+loadstring(game:HttpGet(""))()
+         else
+wait(0.5)
+game.CoreGui["GlobalCall"]:Destroy()
+         end
+   end,
 })

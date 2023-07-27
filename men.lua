@@ -78,8 +78,9 @@ game.CoreGui["_G>FGSC"]:Destroy()
          end
    end,
 })
-local Section2 = Tab:CreateSection("Transformation",true)
-Tab:CreateButton({
+local Section2 = Tab:CreateSection("Transformation",false)
+local TButton
+TButton = Tab:CreateButton({
    Name = "Headcrab",
    Info = "You can become a headcrab in the same position as you are now.", -- Speaks for itself, Remove if none.
    Interact = 'Click',
@@ -145,7 +146,7 @@ Tab:CreateButton({
 local prevpos = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
 wait()
 local args = {
-    [1] = "Vortignaut (not return)",
+    [1] = "Vortignaut",
     [3] = false,
     [4] = {}
 }

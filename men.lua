@@ -225,6 +225,7 @@ local Button5 = Tab:CreateButton({
    Callback = function()
    wait(0.5)
 local prevpos = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+local prevvec = game.Players.LocalPlayer.Character.HumanoidRootPart.Position
 wait()
 local args = {
     [1] = "Bullsquid",
@@ -234,7 +235,7 @@ local args = {
 }
 game:GetService("ReplicatedStorage").Remotes.Teams.TeamChanger:InvokeServer(unpack(args))
       wait(0.4)
-game.Players.LocalPlayer.Character:MoveTo(Vector3.new(prevpos))
+game.Players.LocalPlayer.Character:MoveTo(prevvec)
 wait(0.5)
 game:GetService'StarterGui':SetCore('SendNotification', {
   Title = 'Notification',

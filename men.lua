@@ -78,8 +78,8 @@ game.CoreGui["_G>FGSC"]:Destroy()
          end
    end,
 })
-local Section2 = Tab:CreateSection("Transformation",false)
-local Button4 = Tab:CreateButton({
+local Section2 = Tab:CreateSection("Transformation",true)
+Tab:CreateButton({
    Name = "Headcrab",
    Info = "You can become a headcrab in the same position as you are now.", -- Speaks for itself, Remove if none.
    Interact = 'Click',
@@ -99,7 +99,7 @@ game:GetService("ReplicatedStorage").Remotes.Teams.TeamChanger:InvokeServer(unpa
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = prevpos
 end,
 })
-local Button4 = Tab:CreateButton({
+Tab:CreateButton({
    Name = "Baby Headcrab",
    Info = "You can become a baby headcrab in the same position as you are now.", -- Speaks for itself, Remove if none.
    Interact = 'Click',
@@ -116,7 +116,7 @@ game:GetService("ReplicatedStorage").Remotes.Teams.TeamChanger:InvokeServer(unpa
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = prevpos
 end,
 })
-local Button4 = Tab:CreateButton({
+Tab:CreateButton({
    Name = "Survivor",
    Info = "You can become a survivor in the same position as you are now.", -- Speaks for itself, Remove if none.
    Interact = 'Click',
@@ -135,7 +135,7 @@ game:GetService("ReplicatedStorage").Remotes.Teams.TeamChanger:InvokeServer(unpa
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = prevpos
 end,
 })
-local Button4 = Tab:CreateButton({
+Tab:CreateButton({
    Name = "Vortignaut",
    Info = "You can become a vortignaut in the same position as you are now.", -- Speaks for itself, Remove if none.
    Interact = 'Click',
@@ -154,7 +154,7 @@ game:GetService("ReplicatedStorage").Remotes.Teams.TeamChanger:InvokeServer(unpa
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = prevpos
 end,
 })
-local Button4 = Tab:CreateButton({
+Tab:CreateButton({
    Name = "Bullsquid (not return)",
    Info = "You can become a Bullsquid in the same position as you are now.", -- Speaks for itself, Remove if none.
    Interact = 'Click',
@@ -174,7 +174,7 @@ game:GetService("ReplicatedStorage").Remotes.Teams.TeamChanger:InvokeServer(unpa
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = prevpos
 end,
 })
-local Button4 = Tab:CreateButton({
+Tab:CreateButton({
    Name = "Pit Drone",
    Info = "You can become a Pit Drone in the same position as you are now.", -- Speaks for itself, Remove if none.
    Interact = 'Click',

@@ -193,6 +193,27 @@ game:GetService("ReplicatedStorage").Remotes.Teams.TeamChanger:InvokeServer(unpa
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = prevpos
 end,
 })
+local TSect = Tab:CreateSection("test",false)
+local Button6 = Tab:CreateButton({
+   Name = "Pit Drone",
+   Info = "You can become a Pit Drone in the same position as you are now.", -- Speaks for itself, Remove if none.
+   Interact = 'Click',
+    SectionParent = TSect,
+   Callback = function()
+   print('Pressed')
+   wait(0.5)
+local prevpos = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+wait()
+local args = {
+    [1] = "Pit Drone",
+    [3] = false,
+    [4] = {}
+}
+game:GetService("ReplicatedStorage").Remotes.Teams.TeamChanger:InvokeServer(unpack(args))
+      wait(0.1)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = prevpos
+end,
+})
 local Section = Tab2:CreateSection("Main",true) -- The 2nd argument is to tell if its only a Title and doesnt contain element
 local Button = Tab2:CreateButton({
    Name = "AutoFarm",

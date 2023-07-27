@@ -51,17 +51,16 @@ wait(0.5)
 game:GetService("ReplicatedStorage").Remotes.Zombie.StartZombieAnim:FireServer(unpack(args))
    end,
 })
-local Section3= Tab:CreateSection("Dropdown Examples",true)
-local MultiSelectionDropdown = Tab:CreateDropdown({
+local SingleSelection = Tab:CreateDropdown({
    Name = "Transformation",
-   Options = {"Headcrab","Survivor",'RaceX'},
-   CurrentOption = {"Headcrab","RaceX"} ,
+   Options = {"Headcrab","Survivor","RaceX"},
+   CurrentOption = "Option 1",
    MultiSelection = false,
-   Flag = "Dropdown1",
+   Flag = "Dropdown2", 
    Callback = function(Option)
     print(Option)
-wait(0.5)
 if Option == "Headcrab" then
+   wait(0.5)
 local prevpos = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
 wait()
 local args = {

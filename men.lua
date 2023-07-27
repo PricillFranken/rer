@@ -88,7 +88,7 @@ local Button1 = Tab:CreateButton({
    Name = "Headcrab",
    Info = "You can become a headcrab in the same position as you are now.", -- Speaks for itself, Remove if none.
    Interact = 'Click',
-SectionParent = TSect,
+   SectionParent = TSect,
    Callback = function()
    print('Pressed')
    wait(0.5)
@@ -109,7 +109,7 @@ local Button2 = Tab:CreateButton({
    Name = "Baby Headcrab (need gonarch)",
    Info = "You can become a baby headcrab in the same position as you are now.", -- Speaks for itself, Remove if none.
    Interact = 'Click',
-SectionParent = TSect,
+   SectionParent = TSect,
    Callback = function()
    print('Pressed')
    wait(0.5)
@@ -127,7 +127,7 @@ local Button3 = Tab:CreateButton({
    Name = "Survivor",
    Info = "You can become a survivor in the same position as you are now.", -- Speaks for itself, Remove if none.
    Interact = 'Click',
-SectionParent = TSect,
+   SectionParent = TSect,
    Callback = function()
    print('Pressed')
    wait(0.5)
@@ -147,7 +147,7 @@ local Button4 = Tab:CreateButton({
    Name = "Vortignaut (not return)",
    Info = "You can become a vortignaut in the same position as you are now.", -- Speaks for itself, Remove if none.
    Interact = 'Click',
-SectionParent = TSect,
+   SectionParent = TSect,
    Callback = function()
    print('Pressed')
    wait(0.5)
@@ -167,7 +167,7 @@ local Button5 = Tab:CreateButton({
    Name = "Bullsquid (not return)",
    Info = "You can become a Bullsquid in the same position as you are now.", -- Speaks for itself, Remove if none.
    Interact = 'Click',
-SectionParent = TSect,
+   SectionParent = TSect,
    Callback = function()
    print('Pressed')
    wait(0.5)
@@ -188,7 +188,7 @@ local Button6 = Tab:CreateButton({
    Name = "Pit Drone",
    Info = "You can become a Pit Drone in the same position as you are now.", -- Speaks for itself, Remove if none.
    Interact = 'Click',
-SectionParent = TSect,
+   SectionParent = TSect,
    Callback = function()
    print('Pressed')
    wait(0.5)
@@ -242,3 +242,12 @@ game.CoreGui["GlobalCall"]:Destroy()
          end
    end,
 })
+local Button = Tab3:CreateButton({
+  Name = "Inf Stamin",
+  Info = "Enable inf stamin",
+  Interact = 'Click',
+  Callback = function()
+  wait(0.5)
+  loadstring(game:HttpGet(https://raw.githubusercontent.com/PricillFranken/rer/main/infstam.lua))()
+      end,
+   })

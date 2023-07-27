@@ -51,6 +51,31 @@ wait(0.5)
 game:GetService("ReplicatedStorage").Remotes.Zombie.StartZombieAnim:FireServer(unpack(args))
    end,
 })
+local Section3= Tab:CreateSection("Dropdown Examples",true)
+local MultiSelectionDropdown = Tab:CreateDropdown({
+   Name = "Transformation",
+   Options = {"Headcrab","Survivor",'RaceX'},
+   CurrentOption = {"Headcrab","RaceX"} ,
+   MultiSelection = false,
+   Flag = "Dropdown1",
+   Callback = function(Option)
+    print(Option)
+wait(0.5)
+if Option == "Headcrab" then
+local prevpos = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+wait()
+local args = {
+    [1] = "Headcrab",
+    [2] = "Headcrab",
+    [3] = false,
+    [4] = {}
+}
+game:GetService("ReplicatedStorage").Remotes.Teams.TeamChanger:InvokeServer(unpack(args))
+      wait(0.1)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = prevpos
+         end
+   end,
+})
 local Button4 = Tab:CreateButton({
    Name = "Transformation into a headcrab",
    Info = "You can become a headcrab in the same position as you are now.", -- Speaks for itself, Remove if none.

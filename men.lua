@@ -193,7 +193,7 @@ game:GetService'StarterGui':SetCore('SendNotification', {
 end,
 })
 local Button4 = Tab:CreateButton({
-   Name = "Vortignaut (not return)",
+   Name = "Vortignaut",
    Info = "You can become a vortignaut in the same position as you are now.", -- Speaks for itself, Remove if none.
    Interact = 'Click',
    SectionParent = TSect,
@@ -218,7 +218,7 @@ game:GetService'StarterGui':SetCore('SendNotification', {
 end,
 })
 local Button5 = Tab:CreateButton({
-   Name = "Bullsquid (not return)",
+   Name = "Bullsquid",
    Info = "You can become a Bullsquid in the same position as you are now.", -- Speaks for itself, Remove if none.
    Interact = 'Click',
    SectionParent = TSect,

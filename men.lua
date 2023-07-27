@@ -39,7 +39,7 @@ wait(0.5)
    end,
 })
 local Button2 = Tab:CreateButton({
-   Name = "Mutation [ONLY XEN TEAM]",
+   Name = "Mutation [ONLY Headcrab]",
    Info = "Enable animation. Give inf health for a while, but you are frozen", -- Speaks for itself, Remove if none.
    Interact = 'Click',
    Callback = function()

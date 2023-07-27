@@ -27,6 +27,7 @@ local Window = Rayfield:CreateWindow({
 local Tab = Window:CreateTab("HI") -- Title, Image
 local Tab2 = Window:CreateTab("PofF:R") -- Title, Image
 local Tab3 = Window:CreateTab("ER:LC")
+local Tab4 = Window:CreateTab("Misc")
 local Section = Tab:CreateSection("Main",true) -- The 2nd argument is to tell if its only a Title and doesnt contain element
 local ACButton = Tab:CreateButton({
    Name = "Anticheat ByPass",
@@ -97,7 +98,7 @@ local Toggle2 = Tab:CreateToggle({
    Callback = function(Value)
       if Value == true then
 wait(0.5)
-loadstring(game:HttpGet("https://raw.githubusercontent.com/PricillFranken/rer/main/targeting.lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/PricillFranken/rer/main/luafolder/targeting.lua"))()
 wait(0.5)
 game:GetService'StarterGui':SetCore('SendNotification', {
   Title = 'Notification',
@@ -306,7 +307,7 @@ local Toggle = Tab3:CreateToggle({
    Callback = function(Value)
 if Value == true then
       wait(0.5)
-loadstring(game:HttpGet("https://raw.githubusercontent.com/PricillFranken/rer/main/callgui.lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/PricillFranken/rer/main/luafolder/callgui.lua"))()
 wait(0.5)
 game:GetService'StarterGui':SetCore('SendNotification', {
   Title = 'Notification',
@@ -331,12 +332,43 @@ local Button = Tab3:CreateButton({
   Interact = 'Click',
   Callback = function()
   wait(0.5)
-  loadstring(game:HttpGet("https://raw.githubusercontent.com/PricillFranken/rer/main/infstam.lua"))()
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/PricillFranken/rer/main/luafolder/infstam.lua"))()
 wait(0.5)
 game:GetService'StarterGui':SetCore('SendNotification', {
   Title = 'Notification',
   Text = 'Inf Stamin launched!',
   Duration = 5
 })
+      end,
+   })
+local Section = Tab4:CreateSection("Script list:",true)
+local Button = Tab4:CreateButton({
+  Name = "Inf Yield",
+  Info = "",
+  Interact = 'Click',
+  Callback = function()
+  wait(0.5)
+  loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+  wait(0.5)
+  game:GetService'StarterGui':SetCore('SendNotification', {
+     Title = 'Notification'
+     Text = 'Infinity Yield launched!'
+     Duration = 5
+            })
+      end,
+   })
+local Button = Tab4:CreateButton({
+  Name = "HitBox"
+  Info = "",
+  Interact = 'Click',
+  Callback = function()
+  wait(0.5)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/PricillFranken/rer/main/luafolder/HB.lua"))()
+  wait(0.5)
+game:GetService'StarterGui':SetCore('SendNotification', {
+   Title = 'Notification'
+   Text = 't = Enabled : p = disabled.'
+   Duration = 5
+            })
       end,
    })

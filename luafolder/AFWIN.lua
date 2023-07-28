@@ -10,9 +10,7 @@ while wait() do
    me.CFrame = game:GetService("Workspace").Map2.E_End3.EDoor2.E.Call.CFrame
    wait(2)
    fireproximityprompt(game:GetService("Workspace").Map2.E_End3.EDoor2.E.Call.ProximityPrompt, 1, true)
-   wait(10)
-   me.CFrame = CFrame.new(-634, 69, -5556)
-   wait(2)
+   wait(5)
    fireproximityprompt(game:GetService("Workspace").Map2.E_End3.EDoor2.E.Call.ProximityPrompt, 1, true)
    wait(7)
    me.CFrame = game:GetService("Workspace").Outside.Tunnel.ExitDoor.Door.Keypad.CFrame

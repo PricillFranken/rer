@@ -2,21 +2,20 @@ local PublicScriptName = "MainTable" --[[the PublicScriptName used for terminati
 if not game:FindFirstChild("DestroyAbleScripts") then
      local setp = Instance.new("Folder",game)
       setp.Name = "DestroyAbleScripts" 
-      end 
-      local DestroyAbleFolder = game:FindFirstChild("DestroyAbleScripts")
-       DestroyAbleFolder.ChildAdded:Connect(function(ch)
-        if ch:IsA("CFrameValue") and ch.Value == PublicScriptName then
-        ch:Destroy()
-        wait(.1)
-        script:Destroy() 
-        end
-     end)
+      end
 -- script after this line: --
 local me = game.Players.LocalPlayer.Character.HumanoidRootPart
 
 while wait() do
+   me.CFrame = game:GetService("Workspace").Map2.E_End3.EDoor2.E.Call.CFrame
+   wait(2)
+   fireproximityprompt(game:GetService("Workspace").Map2.E_End3.EDoor2.E.Call.ProximityPrompt, 1, true)
+   wait(10)
+   me.CFrame = CFrame.new(-634, 69, -5556)
+   wait(2)
+   fireproximityprompt(game:GetService("Workspace").Map2.E_End3.EDoor2.E.Call.ProximityPrompt, 1, true)
+   wait(7)
    me.CFrame = game:GetService("Workspace").Outside.Tunnel.ExitDoor.Door.Keypad.CFrame
    wait(5)
    fireproximityprompt(game:GetService("Workspace").Outside.Tunnel.ExitDoor.Door.Keypad.Attachment.ProximityPrompt, 1, true)
-   wait(30)
 end

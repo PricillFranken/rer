@@ -16,5 +16,5 @@ while wait() do
    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Outside.Tunnel.ExitDoor.Door.Keypad.CFrame
    wait(5)
    fireproximityprompt(game:GetService("Workspace").Outside.Tunnel.ExitDoor.Door.Keypad.Attachment.ProximityPrompt, 1, true)
-   wait(10)
+   wait(25)
 end

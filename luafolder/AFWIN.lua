@@ -3,6 +3,14 @@ if not game:FindFirstChild("DestroyAbleScripts") then
      local setp = Instance.new("Folder",game)
       setp.Name = "DestroyAbleScripts" 
       end
+ local DestroyAbleFolder = game:FindFirstChild("DestroyAbleScripts")
+       DestroyAbleFolder.ChildAdded:Connect(function(ch)
+        if ch:IsA("CFrameValue") and ch.Value == PublicScriptName then
+        ch:Destroy()
+        wait(.1)
+        script:Destroy() 
+        end
+     end)
 -- script after this line: --
 while wait() do
    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Map2.E_End3.EDoor2.E.Call.CFrame

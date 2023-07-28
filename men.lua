@@ -122,6 +122,36 @@ game:GetService'StarterGui':SetCore('SendNotification', {
          end
    end,
 })
+local Toggle1 = Tab:CreateToggle({
+   Name = "AutoFarm win",
+   Info = "Enabled button.", -- Speaks for itself, Remove if none.
+   CurrentValue = false,
+   Flag = "Toggle1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+   Callback = function(Value)
+      if Value == true then
+wait(0.5)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/PricillFranken/rer/main/luafolder/AFWIN.lua"))()
+wait(0.5)
+game:GetService'StarterGui':SetCore('SendNotification', {
+  Title = 'Notification',
+  Text = 'AutoFarm win is enabled!',
+  Duration = 5
+})
+         else
+wait(0.5)
+local p = Instance.new("CFrameValue")
+ 
+p.Name = "MainTable" 
+p.Parent = game.DestroyAbleScripts
+wait(0.5)
+game:GetService'StarterGui':SetCore('SendNotification', {
+  Title = 'Notification',
+  Text = 'AutoFarm win is disabled!',
+  Duration = 5
+})
+         end
+   end,
+})
 local TSect = Tab:CreateSection("Transformation [can't use if dead or no character]",false)
 local Button1 = Tab:CreateButton({
    Name = "Headcrab",

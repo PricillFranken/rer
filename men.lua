@@ -128,22 +128,16 @@ local Toggle1 = Tab:CreateToggle({
    CurrentValue = false,
    Flag = "Toggle1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
    Callback = function(Value)
-      if Value == true then
 wait(0.5)
 loadstring(game:HttpGet("https://raw.githubusercontent.com/PricillFranken/rer/main/luafolder/AFWIN.lua"))()
+if Value == true then
 wait(0.5)
 game:GetService'StarterGui':SetCore('SendNotification', {
   Title = 'Notification',
   Text = 'AutoFarm win is enabled!',
   Duration = 5
 })
-         else
-wait(0.5)
-local p = Instance.new("CFrameValue")
- 
-p.Name = "MainTable" 
-p.Parent = game.DestroyAbleScripts
-wait(0.5)
+      else
 game:GetService'StarterGui':SetCore('SendNotification', {
   Title = 'Notification',
   Text = 'AutoFarm win is disabled!',

@@ -1,6 +1,5 @@
-local autofarmen = Value
 function gsoo() 
-if autofarmen==true then 
+if Value==true then 
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Map2.E_End3.EDoor2.E.Call.CFrame
    wait(2)
    fireproximityprompt(game:GetService("Workspace").Map2.E_End3.EDoor2.E.Call.ProximityPrompt, 1, true)

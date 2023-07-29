@@ -1,19 +1,7 @@
-local PublicScriptName = "MainTable" --[[the PublicScriptName used for terminating script. Add CFrame value to folder to game.DestroyAbleScripts and name it like PublicScriptName|| debug:; name and pairs: game.DestroyAbleScripts ; name = DestroyAbleScripts; i'll add most of stuff soon as possible]] 
-if not game:FindFirstChild("DestroyAbleScripts") then
-     local setp = Instance.new("Folder",game)
-      setp.Name = "DestroyAbleScripts" 
-      end
- local DestroyAbleFolder = game:FindFirstChild("DestroyAbleScripts")
-       DestroyAbleFolder.ChildAdded:Connect(function(ch)
-        if ch:IsA("CFrameValue") and ch.Value == PublicScriptName then
-        ch:Destroy()
-        wait(.1)
-        script:Destroy() 
-        end
-     end)
--- script after this line: --
-while wait() do
-   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Map2.E_End3.EDoor2.E.Call.CFrame
+local autofarmen = Value
+function gsoo() 
+if autofarmen==true then 
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Map2.E_End3.EDoor2.E.Call.CFrame
    wait(2)
    fireproximityprompt(game:GetService("Workspace").Map2.E_End3.EDoor2.E.Call.ProximityPrompt, 1, true)
    wait(10)
@@ -25,4 +13,6 @@ while wait() do
    wait(5)
    fireproximityprompt(game:GetService("Workspace").Outside.Tunnel.ExitDoor.Door.Keypad.Attachment.ProximityPrompt, 1, true)
    wait(25)
+gsoo()
+end
 end
